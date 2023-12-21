@@ -1,0 +1,23 @@
+div {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  
+  h2 {
+    color: #333;
+  }
+
+  .example-card {
+    max-width: 600px;
+    min-height: 200px;
+    
+  }
+  
+  .example-header-image {
+    background-image: url(/assets/usuario.png);
+    background-size: cover;
+  }

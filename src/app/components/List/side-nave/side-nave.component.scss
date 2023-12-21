@@ -1,0 +1,30 @@
+
+
+.container {
+ 
+  height: 100vh;
+}
+
+mat-sidenav {
+  flex: 0 0 auto;
+}
+
+.justify-content-flex-end {
+  justify-content: flex-end !important;
+}
+
+/* Configuración para tabletas y dispositivos más grandes */
+@media only screen and (min-width: 768px) {
+  mat-sidenav {
+    width: 180px; /* Ancho del sidenav en tabletas y dispositivos más grandes */
+  }
+}
+
+.active-link{
+  background-color: #ccc;
+}
+
+
+.active-link a {
+  color: bisque;
+}

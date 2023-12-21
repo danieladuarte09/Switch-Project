@@ -1,0 +1,74 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav mode="side" [opened]="isSidenavOpenOnDesktop">
+      <!-- Contenido del cajón "start" -->
+      
+      <mat-nav-list>
+        <a mat-list-item routerLink="#">
+          <mat-icon>account_circle</mat-icon> Username
+          <mat-icon>more_vert</mat-icon> 
+        </a>
+        <a mat-list-item routerLink="/Home" routerLinkActive="active-link">
+          <mat-icon>home</mat-icon> Home
+        </a>
+        <a mat-list-item routerLink="/explorer" routerLinkActive="active-link">
+          <mat-icon>explore</mat-icon> Explorer
+        </a>
+        <a mat-list-item routerLink="#">
+          <mat-icon>message</mat-icon> Messages
+        </a>
+        <a mat-list-item routerLink="#">
+          <mat-icon>turned_in_not</mat-icon> Saved topics
+        </a>
+        <a mat-list-item routerLink="#">
+          <mat-icon>notifications</mat-icon> Notifications
+        </a>
+        <a mat-list-item routerLink="#">
+          <mat-icon>more_vert</mat-icon> More options
+        </a>
+      
+        <a mat-list-item routerLink="#">
+          <mat-icon>add</mat-icon> POST
+        </a>
+
+        
+      </mat-nav-list>
+    </mat-sidenav>
+
+  
+    <mat-sidenav-content>
+      <!-- Barra de titular -->
+      <mat-toolbar color="primary">
+        
+          <mat-toolbar-row class="justify-content-between">
+
+            <button mat-icon-button *ngIf="isHandset" (click)="toggleSidenav()">
+              <mat-icon>menu</mat-icon>
+            </button>
+            
+            <div>
+              <h2>SWITCH</h2>
+            </div>
+            <div>
+              <button mat-button matTooltip="Buscar">
+                <mat-icon>search</mat-icon>
+              </button>
+              <button mat-button matTooltip="Cerrar sesión">
+                <mat-icon>exit_to_app</mat-icon>
+              </button>
+
+              
+            </div>
+          </mat-toolbar-row>
+       
+      </mat-toolbar>
+  
+      <!-- Contenido principal (COMPONENTES)-->
+       <!--Directiva para mostrar el contenido de las distintas rutas del menú-->
+    <router-outlet></router-outlet>
+      
+      
+      
+      
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+

@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+ margin-top: 20px;
+  width: 100%;
+  max-width: 600px; /* o el ancho que desees */
+
+}
+
+label {
+  margin-bottom: 10px; /* Ajusta el espacio entre el label y el textarea */
+  align-items: normal;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 10px; /* Ajusta el espacio entre el textarea y el botón */
+}
+
+button {
+  width: 100%;
+  max-width: 200px; /* o el ancho que desees */
+}
+
+  
