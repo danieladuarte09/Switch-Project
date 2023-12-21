@@ -1,5 +1,5 @@
 div {
-    margin: auto;
+    
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -20,4 +20,10 @@ div {
   .example-header-image {
     background-image: url(/assets/usuario.png);
     background-size: cover;
+   
+  }
+
+  mat-card{
+    background-color: #7a7a7a;
+    
   }

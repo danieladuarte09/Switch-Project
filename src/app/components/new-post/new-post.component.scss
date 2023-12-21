@@ -1,34 +1,83 @@
 .container {
   display: flex;
+  
   flex-direction: column;
   align-items: center;
 
 }
 
-form {
-  display: flex;
-  flex-direction: column;
- margin-top: 20px;
-  width: 100%;
-  max-width: 600px; /* o el ancho que desees */
 
+
+ /*Estilos del form*/
+
+ form {
+  
+  margin: auto;
+  margin-top: 3%;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #fff;
 }
 
 label {
-  margin-bottom: 10px; /* Ajusta el espacio entre el label y el textarea */
-  align-items: normal;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #3e065f
 }
 
+mat-icon {
+  margin-right: 8px;
+}
+
+input,
 textarea {
   width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
-  padding: 8px;
-  margin-bottom: 10px; /* Ajusta el espacio entre el textarea y el botón */
 }
 
-button {
-  width: 100%;
-  max-width: 200px; /* o el ancho que desees */
+
+.btn.btn.btn-primary{
+  background-color: #3e065f; 
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
+
+
+  /*Estilos del new post*/
+
+
+
+  h2 {
+    color: #333;
+  }
+
+  .example-card {
+    max-width: 600px;
+    min-height: 200px;
+    margin-top: 20px;
+    
+  }
   
+  .example-header-image {
+    background-image: url(/assets/usuario.png);
+    background-size: cover;
+   
+  }
+
+  mat-card{
+    background-color: #7a7a7a;
+    
+  }
+
+  .mdc-card{
+    flex-direction: none;
+  }

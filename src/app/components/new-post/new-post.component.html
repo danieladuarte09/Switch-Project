@@ -1,16 +1,61 @@
 
 <div class="container">
     
-    <form (submit)="addPost()">
+    <form [formGroup]="form" (submit)="addPost(form)" >
       
       
-      <label for="contenido"> <mat-icon>account_circle</mat-icon>Ask something!</label>
-      <textarea id="contenido" (input)="nuevoPost.contenido" placeholder="Don't be left with any more doubts" required></textarea>
-  
-      <button class="btn btn-primary" type="submit">SEND</button>
+      <label for="title">
+        <mat-icon>account_circle</mat-icon>Ask something!
+      </label>
+      <input type="text" id="title" placeholder="Add a Title" required formControlName="title">
+    
+      
+      <textarea id="content" formControlName="content" placeholder="Don't be left with any more doubts" required>
+        
+      </textarea>
+    
+     
+
+    
+      <button class="btn btn-primary"  [disabled]="form.invalid" >SEND</button>
   
     </form>
-  </div>
+
+  
+
+    <div class="show" *ngIf="showPost">
+
+    <div class="newPost"  *ngFor="let post of posts ">
+
+    
+    <mat-card class="example-card mr-4" >
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="mb-3">{{ post.title }}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>
+          {{ post.content }}
+        </p>
+
+    
+      </mat-card-content>
+
+     
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+      </div>
+    </div>
+
+    </div>
+
+    
+
+  
   
 
   

@@ -12,13 +12,13 @@ import {MatSidenavModule} from '@angular/material/sidenav'
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
-import { SideNaveComponent } from './components/List/side-nave/side-nave.component';
+import { SideNaveComponent } from './components/side-nave/side-nave.component';
 import { NewPostComponent } from './components/new-post/new-post.component';
 import { ExplorerComponent } from './components/explorer/explorer.component';
 import { ModalNewPostComponent } from './components/modal-new-post/modal-new-post.component';
-import { EntertainmentComponent } from './components/explorer/entertainment/entertainment.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatTabsModule} from '@angular/material/tabs';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +29,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     NewPostComponent,
     ExplorerComponent,
     ModalNewPostComponent,
-    EntertainmentComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -44,7 +44,9 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatListModule,
     MatIconModule,
     NgbModule,
-    MatTabsModule
+    MatTabsModule,
+    ReactiveFormsModule,
+    
 
     
 

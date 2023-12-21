@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ApiService } from '../../services/ApiService';
+import { CommentModel } from '../../Model/post.model';
 
 
 @Component({
@@ -9,11 +10,17 @@ import { Router } from '@angular/router';
 })
 export class ExplorerComponent {
 
+  comments: CommentModel [] = [];
+  
 
-  constructor(private router: Router) {}
+  constructor(private apiService: ApiService) {}
 
 
+  ngOnInit(): void {
+    this.apiService.getComments().subscribe(comments => this.comments = comments as unknown as CommentModel[]);
+  
 
+  }
 
 
 }
