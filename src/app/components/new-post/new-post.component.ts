@@ -8,13 +8,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class NewPostComponent {
 
+  /**Hacemos uso de formularios reactivos para los campos de creación del nuevo post y para obtener los datos con mayor facilidad */
+
   public form!: FormGroup;
   showPost = false;
   posts: any[] = [];
-  
-   
-  
-   
   
 
   constructor(private formBiulder: FormBuilder){}
@@ -27,12 +25,10 @@ export class NewPostComponent {
    
     })
 
-   
-    
   }
 
 
-
+/**Función crear un nuevo post y alamacenarlo en el array */
   addPost(form: FormGroup) {
        
     const newPost = this.form.value;
@@ -42,15 +38,11 @@ export class NewPostComponent {
     // Invierte el array para obtener el orden descendente
     this.posts.reverse();
     
-   
-    
     //muestra el post cuando pulsamos "enviar"
     this.showPost = true;
     //Elimina los valores del input
     form.reset();
 
-    
-    
   }
 
   

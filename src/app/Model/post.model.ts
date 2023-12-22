@@ -1,3 +1,5 @@
+/**Modelo de obtención de datos de la API */
+
 export interface Post {
     imageUrl: string[];
     userId: number;

@@ -50,11 +50,7 @@ textarea {
   font-size: 16px;
 }
 
-
-
   /*Estilos del new post*/
-
-
 
   h2 {
     color: #333;
@@ -63,6 +59,8 @@ textarea {
   .example-card {
     max-width: 600px;
     min-height: 200px;
+   
+    margin: auto;
     margin-top: 20px;
     
   }
@@ -75,9 +73,15 @@ textarea {
 
   mat-card{
     background-color: #7a7a7a;
+   
+    
+  }
+  .show{
+    align-items: center;
+    padding: 10px;
+    
+    justify-content: center;
     
   }
 
-  .mdc-card{
-    flex-direction: none;
-  }
+ 

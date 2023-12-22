@@ -15,10 +15,10 @@ import {MatIconModule} from '@angular/material/icon';
 import { SideNaveComponent } from './components/side-nave/side-nave.component';
 import { NewPostComponent } from './components/new-post/new-post.component';
 import { ExplorerComponent } from './components/explorer/explorer.component';
-import { ModalNewPostComponent } from './components/modal-new-post/modal-new-post.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -28,7 +28,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     SideNaveComponent,
     NewPostComponent,
     ExplorerComponent,
-    ModalNewPostComponent,
+  
+    
+    
 
   ],
   imports: [
@@ -46,10 +48,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     NgbModule,
     MatTabsModule,
     ReactiveFormsModule,
-    
-
-    
-
 
   ],
   providers: [],

@@ -11,24 +11,15 @@ import { Album, Post, PhotoList, Todo, User } from '../../../Model/post.model';
 })
 export class PostListComponent  {
   posts: Post[] = [];
-  comments: Comment[]= [] ;
-  albums: Album[]= [];
-  todos: Todo[]= [];
-  users: User[]= [];
-  PhotoList: PhotoList[] = [];
-
 
   
+  comments: Comment[]= [] ;
 
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
     this.apiService.getPosts().subscribe(posts => this.posts = posts);
-    //this.apiService.getComments().subscribe(comments => this.comments = comments);
-    //this.apiService.getAlbums().subscribe(albums => this.albums = albums);
-    //this.apiService.getPhotos().subscribe(photos => this.PhotoList = photos);
-    //this.apiService.getTodos().subscribe(todos => this.todos = todos);
-    //this.apiService.getUsers().subscribe(users => this.users = users);
+  
   }
 }
 

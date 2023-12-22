@@ -15,7 +15,8 @@ export class SideNaveComponent   {
 
 
   constructor(private breakpointObserver: BreakpointObserver) {
-    // Observa cambios en los puntos de ruptura y actualiza el estado del sidenav
+
+    // Observa cambios y actualiza el estado del sidenav
     this.breakpointObserver.observe([Breakpoints.Handset]).subscribe(result => {
       this.isSidenavOpenOnDesktop = !result.matches;
     });
@@ -25,8 +26,6 @@ export class SideNaveComponent   {
     this.isSidenavOpenOnDesktop = !this.isSidenavOpenOnDesktop;
   }
   
-
- 
 }
 
 

@@ -15,7 +15,7 @@ export class ExplorerComponent {
 
   constructor(private apiService: ApiService) {}
 
-
+ //Nos suscribimos al servicio que obtiene los datos de la API
   ngOnInit(): void {
     this.apiService.getComments().subscribe(comments => this.comments = comments as unknown as CommentModel[]);
   

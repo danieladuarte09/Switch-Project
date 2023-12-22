@@ -13,20 +13,18 @@
         <a mat-list-item routerLink="/explorer" routerLinkActive="active-link">
           <mat-icon>explore</mat-icon> Explorer
         </a>
-        <a mat-list-item routerLink="#">
+        <a mat-list-item routerLink="messages" routerLinkActive="active-link">
           <mat-icon>message</mat-icon> Messages
         </a>
-        <a mat-list-item routerLink="#">
+        <a mat-list-item >
           <mat-icon>turned_in_not</mat-icon> Saved topics
         </a>
-        <a mat-list-item routerLink="#">
-          <mat-icon>notifications</mat-icon> Notifications
-        </a>
-        <a mat-list-item routerLink="#">
+        
+        <a mat-list-item >
           <mat-icon>more_vert</mat-icon> More options
         </a>
       
-        <a mat-list-item routerLink="#">
+        <a mat-list-item >
           <mat-icon>add</mat-icon> POST
         </a>
 
@@ -62,13 +60,10 @@
        
       </mat-toolbar>
   
-      
+      <!--Espacio para el contenido-->
        <!--Directiva para mostrar el contenido de las distintas rutas del menú-->
     <router-outlet></router-outlet>
-      
-      
-      
-      
+
     </mat-sidenav-content>
   </mat-sidenav-container>
 

@@ -1,0 +1,60 @@
+
+
+<div class="container">
+
+    
+     <div class="UserMessage"> 
+
+    
+        <mat-icon>account_circle</mat-icon>Username 
+        <p>Hey, I have a question about your last post.</p>
+         </div>
+
+         <div class="UserMessage"> 
+
+    
+            <mat-icon>account_circle</mat-icon>Username 
+            <p>Hi, Would you like to colaborate?</p>
+             </div>
+
+             <div class="conversation-container"> 
+
+                <div class="UserMessage"> 
+
+    
+                    <mat-icon>account_circle</mat-icon>Username 
+                    <p>Hi there! I like your content.</p>
+                     </div>
+
+                        <div class="show" *ngIf="show">
+
+                            
+
+                              <div class="newPost"  *ngFor="let message of newMessages ">
+                        
+                            
+                          
+                                <p>
+                                  {{ message.content }}
+                                </p>
+                        
+                            
+                              </div>
+                        </div>
+
+    
+
+    <form [formGroup]="messageForm" (submit)="sendMessage()">
+   
+      <textarea id="content" formControlName="content" placeholder="Write here your message!" required></textarea>
+    
+      <button type="submit" class="btn btn-primary" [disabled]="messageForm.invalid">SEND</button>
+  
+    </form>
+  
+  </div>
+
+</div>
+
+
+  
